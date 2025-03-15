@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src = "form2.js" defer></script>
+<style>
+.load{
+width: 30px;
+height: 30px;
+border: 12px solid black;
+border-top: 12px solid red;
+border-radius: 50%;
+background-color: green;
+animation : round 1s linear infinite;
+margin:  auto;
+display: none;
+}
+
+@keyframes  round{
+0% {
+transform: rotate(0deg);
+}
+
+100%{
+transform: rotate(360deg);
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<div class = "container">
+
+<form action = "Servlet" method = "post" class = "form2">
+
+<div class = "upper"><h1>DATA MAN</h1></div>
+
+
+<div class = "lower">
+
+<div class = "low1">
+<input name = "name" placeholder = "Enter your Name" type = "text">
+<input name = "email" placeholder = "Enter your Email" type = "email">
+<input name = "password" placeholder = "Enter your Password" type = "password">
+</div>
+
+<div class = "low2">
+<label for = "gender">Gender</label>
+<input name = "male" type = "radio">Male
+<input  name = "female" type = "radio">Female
+</div>
+
+<div class = "low3">
+<input type = "checkbox" name = "check" required>
+<label>AGREE TERMS AND CONDITIONS</label>
+</div>
+<div class = "load"></div>
+<button class = "but">Submit</button>
+
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
